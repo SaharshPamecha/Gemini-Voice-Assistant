@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Mic, MicOff, Settings, Volume2, VolumeX, Loader2, Wand2, StopCircle } from 'lucide-react';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
-const genAI = new GoogleGenerativeAI('AIzaSyAXsKG6WobxqU3RrXihE_k7_Dxeo5gWoJ8');
+const genAI = new GoogleGenerativeAI('');
 const model = genAI.getGenerativeModel({ model: 'gemini-pro' });
 
 const cleanText = (text: string): string => {
